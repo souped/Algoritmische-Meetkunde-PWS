@@ -5,7 +5,7 @@ from sympy import *
 import time
 import sys
 
-file = "Random_files/SituatiesJSON.json"
+file = "SituatiesJSON.json"
 
 start_time = time.time()
 
