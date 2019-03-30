@@ -1,0 +1,54 @@
+{
+	"1": {
+		"Punten": ["A","B","C","D","E","F","G","H","I","J"],
+		"Cirkels": ["p","q"],
+		"Relaties": [
+			["p","A","|"],
+			["p","B","|"],
+			["p","F","|"],
+			["p","C","|"],
+			["q","B","|"],
+			["q","C","|"],
+			["q","J","|"],
+			["p","D","0"],
+			["q","E","0"],
+			["D",["A","B"],"0"],
+			["E",["B","J"],"0"]
+			],
+		"VergelijkingString": ["BE - EJ", "ABJ - 90", "BD - AD"],
+		"Symbolen": ["Symbol('BD')", "Symbol('AD')", "Symbol('BE')", "Symbol('EJ')", "Symbol('ABJ')"],
+		"DoelSymbool": ["Symbol('AC')","Symbol('CJ')","Symbol('BC')"],
+		"OplosSymbool": "Symbol('BC')"
+	},
+	"2": {
+		"Punten": ["A","B","C","D","E","F"],
+		"Cirkels": ["c"],
+		"Relaties": [["A",["D","E"],"|"],
+            ["c","A","0"],
+            ["c","B","|"],
+            ["A",["C","F"],"|"],
+            ["D",["B","C"],"|"],
+            ["c","D","|"]
+            ],
+		"VergelijkingString": ["AD - CD", "BAF + EAF - BAE", "ADC + ADB - BDC", "BAE + BAD - DAE"],
+		"Symbolen": ["Symbol('AD')", "Symbol('CD')", "Symbol('BAF')", "Symbol('ACD')", "Symbol('BAF')", "Symbol('EAF')", "Symbol('BAE')"],
+		"DoelSymbool": ["Symbol('BAF')", "Symbol('ACD')"],
+		"OplosSymbool": "Symbol('BAF')"
+	},
+	"3": {
+		"Punten": ["A","D","C","E","F"],
+		"Cirkels": ["q"],
+		"Relaties": [["F",["D","E"],"|"],
+            ["q","C","0"],
+            ["q","A","|"],
+            ["q","D","|"],
+            ["q","E","|"],
+            ["C",["A","D"],"|"],
+            [["A","E"],["C","F"],"//"]
+            ],
+		"VergelijkingString": ["AC - CD","ADE - CDF"],
+		"Symbolen": ["Symbol('AC')", "Symbol('CD')", "Symbol('DF')", "Symbol('AE')", "Symbol('ADE')", "Symbol('CDF')"],
+		"DoelSymbool": ["Symbol('DF')", "Symbol('AC')", "Symbol('AE')"],
+		"OplosSymbool": "Symbol('DF')"
+	}
+}
