@@ -5,7 +5,7 @@ import sys
 import json
 
 start_time = time.time()
-file = "Random_files/SituatiesJSON.json"
+file = "SituatiesJSON.json"
 
 #niet afhankelijk van situatie
 Vergelijkingen = []
@@ -495,6 +495,7 @@ print("##################################")
 print("Momenteel hebben wij 3 situaties!")
 print("Welke situatie wilt u gebruiken?")
 situatiegetal = input("Situatie: ")
+print("##################################")
 
 situatie = jsonreader(file, situatiegetal)
 
